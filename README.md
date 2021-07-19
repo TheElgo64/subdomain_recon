@@ -22,6 +22,12 @@ sudo apt install python3-adns
 
 python3 MassForceRev.py 8.8.0.0 8.8.64.255
 
-## info:
+## info
 
-original source: ===> https://github.com/hassan0x/MassForce
+Source:
+
+https://www.facebook.com/NineHackers/posts/1292534984239568
+
+https://github.com/hassan0x/MassForce
+
+And i fix some problems to work in python3 :D
