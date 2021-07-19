@@ -1,2 +1,27 @@
-# subdomain_recon
-Sub_Domains Enumeration Techniques
+# Sub_Domains Enumeration Techniques
+
+## 1- Web Scraping Techniques:
+
+Amass     => https://github.com/OWASP/Amass
+
+SubFinder => https://github.com/subfinder/subfinder
+
+Sublist3r => https://github.com/aboul3la/Sublist3r
+
+## 2- BruteForce Techniques:
+
+sudo apt install python3-adns
+
+sed -e 's/$/.example.com/' subs.txt > subdomain.txt
+
+python3 MassForce.py subdomain.txt
+
+## 3- Reverse Lookup Techniques:
+
+sudo apt install python3-adns
+
+python3 MassForceRev.py 8.8.0.0 8.8.64.255
+
+## info:
+
+original source: ===> https://github.com/hassan0x/MassForce
