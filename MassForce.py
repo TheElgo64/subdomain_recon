@@ -1,9 +1,10 @@
 import adns, time, os, sys
 
-if len(sys.argv) == 2:
+if len(sys.argv) == 3:
 	host_file = sys.argv[1]
+	output_file = sys.argv[2]
 else:
-	print ("Usage:",sys.argv[0],"[Hosts_File]")
+	print ("Usage: python3 ",sys.argv[0],"hosts.txt output_hosts.txt")
 	exit()
 
 with open(host_file, 'r') as f:
@@ -59,6 +60,8 @@ def main():
 	for host in resolved_hosts:
 		if resolved_hosts[host] != None:
 			print (host, resolved_hosts[host])
+			with open(output_file, 'a') as f:
+				f.write(host + '\n')
 	print ("#######################################################")
 
 main()
