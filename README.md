@@ -12,9 +12,9 @@ Sublist3r => https://github.com/aboul3la/Sublist3r
 
 sudo apt install python3-adns
 
-sed -e 's/$/.example.com/' subs.txt > subdomain.txt
+sed -e 's/$/.example.com/' subs.txt > hosts.txt
 
-python3 MassForce.py subdomain.txt
+python3 MassForce.py hosts.txt output_hosts.txt
 
 ## 3- Reverse Lookup Techniques:
 
