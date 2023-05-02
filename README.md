@@ -30,4 +30,4 @@ https://www.facebook.com/NineHackers/posts/1292534984239568
 
 https://github.com/hassan0x/MassForce
 
-And i fix some problems to work in python3 :D
+I fixed some errors to work in Python 3 :D
